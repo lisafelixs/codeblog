@@ -16,7 +16,7 @@ public class Post {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
+
 	@NotBlank
 	private String titulo;
 	
@@ -29,6 +29,14 @@ public class Post {
 	@NotBlank
 	@Lob
 	private String texto;
+	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getTitulo() {
 		return titulo;
